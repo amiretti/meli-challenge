@@ -1,0 +1,22 @@
+{
+  "name": "meli_api",
+  "version": "1.0.0",
+  "description": "Meli API",
+  "main": "app.js",
+  "dependencies": {
+    "node-fetch": "^2.6.1"
+  },
+  "devDependencies": {
+    "@babel/core": "^7.12.10",
+    "@babel/node": "^7.12.10",
+    "@babel/preset-env": "^7.12.11",
+    "express": "^4.17.1",
+    "nodemon": "^2.0.7",
+    "querystring": "^0.2.0"
+  },
+  "scripts": {
+    "start": "nodemon --exec babel-node app.js"
+  },
+  "author": "Miretti Andrés",
+  "license": "ISC"
+}
