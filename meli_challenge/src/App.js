@@ -6,24 +6,29 @@ import {
   Route
 } from "react-router-dom";
 
-import ProductDetail from './components/ProductDetails';
-import SearchBox from './components/SearchBox';
-import SearchResults from './components/SearchResults';
+import Detail from './pages/Detail';
+import SearchResult from './pages/SearchResult';
+import Home from './pages/Home';
+import Error404 from './pages/Errors/Error404';
 
 function App() {
   return (
     <Router>
       <div className="app">
-        <SearchBox></SearchBox>
         <Switch>
+          <Route path="/" exact >
+            <Home/>
+          </Route>
           <Route path="/items" exact>
-            <SearchResults />
+            <SearchResult/>
           </Route>
           <Route path="/items/:id">
-            <ProductDetail/>
+            <Detail/>
+          </Route>
+          <Route path="*">
+            <Error404/>
           </Route>
         </Switch>
-        <footer className="footer"></footer>
       </div>
     </Router>
   );

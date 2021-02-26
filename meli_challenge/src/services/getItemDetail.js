@@ -1,13 +1,16 @@
 import rootUrl from "./rootUrl";
 const fetch = require("node-fetch");
 
-export default function getItemDetail({id}){
+export default function getItemDetail(id){
     const url = rootUrl() + `items/${id}`;
-console.log(url);
     return fetch(url)
-        .then(res => res.json())
         .then(response => { 
-            return response;
+            if(response.ok){
+                return response.json();
+            }
+            else{
+                window.location.assign("/404");
+            }
         })
         .catch(err => console.log(err));
 }

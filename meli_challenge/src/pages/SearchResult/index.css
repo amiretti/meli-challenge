@@ -1,0 +1,55 @@
+.container-search-results{
+    background-color: white;
+    width: 100%;
+  }
+  .custom-img-results{
+    height: 100%;
+    width: 100%;
+    object-fit: contain;
+    border-radius: 4px;
+  }
+  .custom-img-container-results{
+    text-align: center;
+    margin: 16px;
+    padding: 0;
+    width: 180px !important;
+    height: 180px !important;
+  }
+  .colums-search-results{
+    margin-bottom: 0!important;
+    cursor: pointer;
+  }
+  .hr-search-results{
+    margin: 0;
+  }
+  
+  p.price-search-results{
+    margin-top: 18px;
+    display: flex;
+    padding: 32px 0;
+  }
+  
+  .price-search-results span{
+    font-size: 24px;
+  }
+  
+  .location-search-results p{
+    font-size: 12px;
+    margin-top: 18px;
+    padding: 32px 0;
+  }
+  
+  .price-search-results img{
+    width: 24px;
+    height: 24px;
+    margin: 8px 0 0 8px;
+    padding: 3px;
+  }
+  
+  .price-search-results sup{
+    font-size: 16px;
+  }
+  
+  .title-search-results{
+    font-size: 18px;
+  }
